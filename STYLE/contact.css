@@ -152,17 +152,17 @@ input:checked + label .description {
 }
 
 .card[for="c1"] {
-  background-image: url('../img/workshop.png');
+  background-image: url('../IMG/workshop.png');
   background-repeat: no-repeat;
   background-size: cover;
 }
 .card[for="c2"] {
-  background-image: url('../img/360_F_768779344_FkZvgzSgGLG47bGJZF8Nv63Xq4TFZGlO.jpg');
+  background-image: url('../IMG/360_F_768779344_FkZvgzSgGLG47bGJZF8Nv63Xq4TFZGlO.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
 .card[for="c3"] {
-  background-image: url('../img/480554093.webp');
+  background-image: url('../IMG/480554093.webp');
   background-repeat: no-repeat;
   background-size: cover;
 }
