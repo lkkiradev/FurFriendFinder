@@ -1,0 +1,134 @@
+
+.posted {
+  position: absolute;
+  font-weight: 400;
+  font-size: 13px;
+  text-align: center;
+  top: 330px;
+  left: 89px;
+}
+
+.rescued {
+  position: absolute;
+  font-weight: 400;
+  font-size: 13px;
+  text-align: center;
+  top: 347px;
+  left: 89px;
+}
+
+.pet_pic {
+  position: absolute;
+  border-radius: 20px;
+  top: 55px;
+  width: 250px;
+  height: 260px;
+  object-fit: cover;
+}
+
+.pet_name {
+  position: relative;
+  bottom: 155px;
+}
+
+.content {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1020px;
+  padding-top: 200px;
+}
+
+.card {
+  top: 555px;
+  color: inherit;
+  cursor: pointer;
+  width: calc(29% - 0.5rem);
+  min-width: calc(30% - 2rem);
+  height: 400px;
+  perspective: 1200px;
+  margin: 8px;
+  position: relative;
+}
+
+@media screen and (max-width: 800px) {
+  .card {
+    width: calc(50% - 2rem);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .card {
+    width: 100%;
+  }
+}
+
+.front,
+.back {
+  display: flex;
+  border-radius: 20px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  height: 23.5rem;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  transition: ease-in-out 650ms;
+}
+
+.front {
+  font-family: "Jost", sans-serif;
+  background-color: #ffffff;
+  font-size: 1.68rem;
+  font-weight: 700;
+  color: #000000;
+  overflow: hidden;
+  box-shadow: .5px .5px 4px 3px #b8b6b6;
+}
+
+.card:hover .front {
+  transform: rotateY(180deg);
+}
+
+.card:nth-child(even):hover .front {
+  transform: rotateY(-180deg);
+}
+
+.back {
+  box-shadow: 1px 1px 3px 3px #9b7e56;
+  background: #ed9455;
+  transform: rotateY(-180deg);
+  padding: 0 2em;
+}
+
+.front .button {
+  font-size: 12px;
+  background: #6AAE68;
+  box-shadow: rgba(0, 0, 0, 0.5);
+}
+
+
+.card:hover .back {
+  transform: rotateY(0deg);
+}
+
+.button {
+  height: 30px;
+  width: 4.5rem;
+  top: 332px;
+  left: 10px;
+  cursor: pointer;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  color: #f8f8f8;
+  padding: 0.5em 1em;
+  border-radius: 100px;
+  font: inherit;
+  border: none;
+  position: absolute;
+}

@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Jomhuria&display=swap");
+
+body{
+    background-image: url(../IMG/TOSBgfinal.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.screen-container{
+    display: grid;
+    grid-template-rows: 2fr 5fr 2fr;
+
+    height: 1231px;
+    margin-top: 100px;
+}
+
+.top-tos{
+    display: grid;
+    grid-template-columns: 2fr 6fr 2fr;
+}
+
+.middle-tos{
+    display:grid;
+    grid-template-columns: 2fr 6fr 2fr ;
+}
+
+.bottom-tos{
+    display:grid;
+    grid-template-columns: 2fr 6fr 2fr ;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
+    font-family: "Jomhuria";
+    font-size: 7rem;
+    font-weight: 300;
+    color: black;
+
+    z-index: 5;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;    
+    align-items: center ;
+    margin-top: 0;
+    
+    max-height: 670px;
+
+    text-align: center;
+    font-style: italic;
+    font-family: "Jost";
+    padding: 4rem;
+    background-color: #FFF9F5;
+    border-radius: 20px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 1);
+}
+
+.content{
+    text-indent: 23px;
+    padding: 30px;
+    padding-top: 30px;
+}
+
+.content1{
+    text-indent: 30px;
+}
+
+.sizeAndWeight {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.flex-items{
+    flex: 1;
+}
+
+.paw-white1{
+    position: absolute;
+    top: 23%;
+    left: 75%;
+    z-index: 2;
+    transform: rotate(-35deg);
+}
+.paw-white2{
+    position: absolute;
+    top: 80%;
+    left: 15%;
+    z-index: 2;
+    transform: rotate(30deg);
+}
+
+.dogbg {
+    position: absolute;
+    top: 20.5%;
+    left: 25%;
+    z-index: 2;
+}
+
+.paw-black{
+    position: absolute;
+    top: 17%;
+    left: 47%;
+    z-index: 2;
+}
+
+.scroll-container {
+    width: 1000px;
+    height: 2000px;
+    overflow: auto;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.scroll-container::-webkit-scrollbar {
+    width: 25px;
+}
+
+.scroll-container::-webkit-scrollbar-track {
+    background: #514A44; 
+    border-radius: 15px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+    background-color: #9B9986; 
+    border-radius: 15px; 
+}
+
+.scroll-container::-webkit-scrollbar-thumb:hover {
+    background-color: #878884;
+}
+
+.scroll-container::-moz-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.scroll-container::-moz-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+    border: 3px solid #f1f1f1;
+}
+
+.scroll-container::-moz-scrollbar-thumb:hover {
+    background-color: #555;
+}
+

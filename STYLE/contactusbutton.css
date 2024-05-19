@@ -1,0 +1,59 @@
+.button {
+    line-height: 0.75;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: .75rem;
+    background-color: var(--clr);
+    color: #23211F;;
+    font-family: "Poppins";
+    border-radius: 10rem;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 1.5rem 3rem;
+    padding-left: 40px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: all .3s;
+    margin: 920px 0px 0px 1610px;
+    position: absolute;
+    z-index: 2;
+  }
+  
+  .button__icon-wrapper {
+    flex-shrink: 0;
+    width: 25px;
+    height: 25px;
+    position: relative;
+    color: var(--clr);
+    background-color: #fff;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+  }
+  
+  .button:hover {
+    background-color: #ECC154;
+    transform: translateY(-20px);
+  }
+  
+  .button:hover .button__icon-wrapper {
+    color: #ECC154;
+  }
+  
+  .button__icon-svg--copy {
+    position: absolute;
+    transform: translate(-150%, 150%);
+  }
+  
+  .button:hover .button__icon-svg:first-child {
+    transition: transform .3s ease-in-out;
+    transform: translate(150%, -150%);
+  }
+  
+  .button:hover .button__icon-svg--copy {
+    transition: transform .3s ease-in-out .1s;
+    transform: translate(0);
+  }

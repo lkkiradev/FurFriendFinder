@@ -1,0 +1,390 @@
+@import url("https://fonts.googleapis.com/css2?family=Jomhuria&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+
+
+body{
+    background-image: url(../IMG/Petitionsbg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}                            
+
+.title-container{
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 200px;
+  
+    width: 1920px;
+    height: 125px;
+}
+
+.title{
+    font-size: 168px;
+    font-family: "Jomhuria", serif;
+    font-weight: 510;
+    font-style: normal;
+}
+
+.sub-title{
+
+    justify-content: space-evenly;
+    
+    font-size: 24px;
+    font-family: "Jost";
+    font-weight: 700;
+    font-style: normal;
+}
+
+.content-container{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1.5fr;
+    grid-template-rows: 1.5fr 2fr 1.5fr;
+
+    width: 1320px;  
+    height: 528px;  
+    margin-top: 15px;
+    margin-left: 300px;
+    margin-bottom: 30px;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(to bottom, #FFFFFF, #DFDCC1);
+    border-radius: 20px;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5);
+}
+
+ .dog-killing{
+    display: grid;
+    grid-row: span 2;
+} 
+
+.felix-pic{ 
+    display: inline-flex;
+    padding-left: 20px;
+    padding-top: 15px;
+}
+
+.felix-container{
+    display: block;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.felix-startedBy{
+    font-size: 20px;
+    font-family: "Jost";
+    font-weight: 600;
+    font-style: italic;
+}
+
+.felix-startedOn{
+
+    font-size: 20px;
+    font-family: "Jost";
+    font-weight: 400;
+    font-style: italic;
+
+    color: black;
+    opacity: .52;
+}
+.btn-container {
+    display: inline-flex;
+    margin-left: 350px;
+    margin-top: 80px;
+    gap: 20px;
+  }
+
+.btnFeatured {
+    background: linear-gradient(45deg, #ff0066, #ffcc00, #00ff99, #0066ff);
+    color: black;
+  
+    width: 170px;
+    height: 35px;
+
+    font-size: 22px;
+    font-family: "Jost";
+    font-weight: 700;
+  
+    border: none;
+    border-radius: 50px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+    cursor: pointer;
+
+    
+    background-size: 400%;
+    border-radius: 50px;
+    transition: background-position 0.5s, transform 0.2s;
+  }
+
+.btnPopular{
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    color: black;
+  
+    width: 170px;
+    height: 35px;
+  
+    font-size: 22px;
+    font-family: "Jost";
+    font-weight: 700;
+  
+    border: none;
+    border-radius: 50px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  
+    cursor: pointer;
+    
+    background-size: 400%;
+    border-radius: 50px;
+    transition: background-position 0.5s, transform 0.2s;
+}
+
+  .btnSign {
+    background-color:#847b73 ;
+    color: white;
+  
+    width: 320px;
+    height: 76px;
+
+    font-size: 22px;
+    font-family: "Jost";
+    font-weight: 700;
+    text-transform: uppercase;
+  
+    border: none;
+    border-radius: 50px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+
+  }
+
+  .btnFeatured:hover{
+    background-position: 100%;
+    transform: scale(1.1);
+    animation: pulse 1s infinite;
+
+  }
+
+  .btnPopular:hover{
+    background-position: 100%;
+    transform: scale(1.1);
+    animation: pulse 1s infinite;;
+  }
+
+  .btnSign:hover{
+    background: linear-gradient(to right, #FFB88C, #DE6262);
+
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  @keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 20px rgba(255, 255, 255, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+    }
+}
+
+.petition-container{
+    display: flex;
+    flex-direction: column; 
+    
+    flex:1;
+}
+.petition-title{
+    font-size: 39px;
+    font-family: "Jost";
+    font-weight: 700;
+
+    padding-left: 30px;
+}
+
+.progressBar-container{
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 20px;
+
+}
+
+.progressBar-black{
+    position: relative;
+    background-color: #23211F;
+
+    width: 450px;
+    height: 38px;
+    margin-top: 55px;
+
+    border-radius: 20px;
+    z-index: 1;
+}
+
+.progressBar-yellow{
+    position:absolute;
+    background-color: #E9B953;
+
+    margin-right: 180px !important;
+    margin-top: 29px;
+    width: 280px;
+    height: 38px;
+
+    border-radius: 20px;
+    z-index: 2;
+}
+.progressDesc-container{
+    display: flex;
+    padding-top: 0;
+}
+.progressDesc{
+    font-size: 18px;
+    font-family: "Jost";
+    font-weight: 500;
+    font-style: italic;
+}
+/* first name */
+.input-boxFN{
+    display: flex;
+    flex-direction: row;
+
+    padding-top: 50px;
+  }
+  
+  .input-boxFN input[type="text"] {
+    padding: 6px 0px 0px 45px;
+    z-index: 1;
+  }
+  
+  input[type="text"]::placeholder {
+    font-family: "Jost", sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    color: #757472;
+    
+  }
+  
+  input.detailsBar {
+    width: 290px;
+    height: 40px;
+
+    border-radius: 30px;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.3);
+  }
+  /* last name */
+  .input-boxLN{
+    display: flex;
+    flex-direction: row;
+
+    margin-top: 50px;
+  }
+  
+  .input-boxLN input[type="text"] {
+    padding: 6px 0px 0px 45px;
+    z-index: 1;
+  }
+  
+  input[type="text"]::placeholder {
+    font-family: "Jost", sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    color: #757472;
+    
+  }
+  
+  input.detailsBar {
+    width: 290px;
+    height: 40px;
+
+    border-radius: 30px;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.3);
+  }
+/* email */
+  .input-boxEmail{
+    display: flex;
+    flex-direction: row;
+
+    margin-bottom: 30px
+  }
+  
+  .input-boxEmail input[type="text"] {
+    padding: 6px 0px 0px 45px;
+    z-index: 1;
+  }
+  
+  input[type="text"]::placeholder {
+    font-family: "Jost", sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    color: #757472;
+    
+  }
+  
+  input.detailsBar {
+    width: 290px;
+    height: 40px;
+
+    border-radius: 30px;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.3);
+  }
+  .text-container{
+
+    font-family: "Jost";
+    font-size: 24px;
+    font-style: italic;
+    color: black;
+    
+  }
+  .scroll-container {
+    margin-left: 20px;
+    width: 400px;
+    height: 160px;
+    overflow: auto; 
+    padding: 15px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+
+}
+
+.scroll-container::-webkit-scrollbar {
+    width: 25px;
+}
+
+.scroll-container::-webkit-scrollbar-track {
+    background: #514A44; 
+    border-radius: 15px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+    background-color: #9B9986; 
+    border-radius: 15px; 
+}
+
+.scroll-container::-webkit-scrollbar-thumb:hover {
+    background-color: #878884;
+}
+
+.scroll-container::-moz-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.scroll-container::-moz-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+    border: 3px solid #f1f1f1;
+}
+
+.scroll-container::-moz-scrollbar-thumb:hover {
+    background-color: #555;
+}

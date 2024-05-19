@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Jomhuria&family=Jost:wght@100..900&display=swap");
+
+.rating-part {
+  display: flex;
+  justify-content: center;
+  margin-top: 33px;
+  grid-row: span 2;
+  z-index: 1;
+}
+
+.rating-container {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  width: 485px;
+  height: 275px;
+  border-radius: 13px;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(223, 220, 193, 1) 100%
+  );
+}
+.rating-top {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.rating-bottom {
+  display: grid;
+  background: rgb(223, 220, 193);
+  background: linear-gradient(
+    180deg,
+    rgba(223, 220, 193, 1) 0%,
+    rgba(250, 249, 244, 1) 100%
+  );
+  border-radius: 13px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bar:hover {
+  background-color: rgba(223, 220, 193, 1);
+}
+
+.bar-star {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+
+.rate-star-1 {
+  color: orange;
+  margin-top: 5%;
+  font-size: x-large;
+  transition: all 0.3s;
+}
+
+.rate-star-1:hover {
+  color: rgb(255, 115, 0);
+  margin-top: 5%;
+  font-size: x-large;
+}
+
+.rate-star-2 {
+  margin-top: 5%;
+  font-size: x-large;
+  transition: all 0.3s;
+}
+
+.rate-star-2:hover {
+  color: rgb(99, 93, 90);
+  margin-top: 5%;
+  font-size: x-large;
+}
+
+.rate-star-2:active {
+  color: orange;
+}
+
+.percent-number {
+  display: inline;
+  font-family: "Jost", sans-serif;
+  font-size: 24px;
+  margin: 0%;
+  padding: 0%;
+  font-weight: 400;
+  color: #807670;
+  margin-top: 5%;
+  margin-left: 15px;
+}
+
+.rate-star-3 {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  font-size: x-large;
+  transition: all 0.3s;
+}
+
+.rate-star-3:hover {
+  color: orange;
+}
+
+.percent-number:hover {
+  color: orange;
+}
+
+.total-ratings {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.average-ratings {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.average-ratings:hover {
+  color: orange;
+}

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./STYLE/login.css">
+    <link rel="stylesheet" href="./STYLE/signup.css">
+    <script type="text/javascript" src="./SCRIPT/login.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css">
+    <title>FurFriend Finder - Login</title>
+    <link rel="icon" href="./IMG/new logo.png">
+    <link rel="stylesheet" href="./STYLE/loader.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+
+<body>
+
+    <i class="fa-solid fa-paw" id="i1"></i>
+    <h1>Welcome to FurFriend Finder!</h1>
+    <i class="fa-solid fa-paw" id="i2"></i>
+
+    <img src="./IMG/cutedc3.png" alt="Cute cat and dog">
+    <div class="bgcontainer">
+        <div class="wrapper">
+            <h2>Help make the world more PAW-some!</h2>
+            <form action="" method="post">
+                <div class="input-box">
+                    <input type="text" name="email" placeholder="Email" class="input-field" required>
+                    <i class='bx bxs-user'></i>
+                </div>
+                <div class="input-box">
+                    <input type="password" name="password" placeholder="Password" class="input-field" required>
+                    <i class='bx bxs-lock-alt'></i>
+                </div>
+
+                <div class="remember-forgot">
+                    <label>
+                        <input type="checkbox"> Remember me
+                    </label>
+                    <a href="#">Forgot password?</a>
+                </div>
+
+                <button type="submit" class="btn" value="LOGIN"><a href="./PAGES/home.html"
+                        style="text-decoration: none; color: #b6b293; font-size: 20px;">Login</a></button>
+
+                <div class="popup" id="popup-1">
+                    <div class="overlay"></div>
+                    <div class="content">
+                        <div class="close-btn" onclick="togglePopup()">&times;</div>
+
+                        <h2>Sign Up</h2>
+                        <form action="">
+                            <div class="name">
+                                <input type="text" name="firstname" class="input-field" placeholder="First name"
+                                    required>
+                                <input type="text" name="lastname" class="input-field" placeholder="Last name" required>
+                            </div>
+                            <div class="em">
+                                <input type="email" name="email" class="input-field" placeholder="Email" required>
+                            </div>
+                            <div class="pw">
+                                <input type="password" name="password" class="input-field" placeholder="New password"
+                                    required>
+                            </div>
+
+                            <div class="bday">
+                                <p>Birthday</p>
+                                <select id="month" name="month" required>
+                                    <option value="1">January</option>
+                                    <option value="2">February</option>
+                                    <option value="3">March</option>
+                                    <option value="4">April</option>
+                                    <option value="5">May</option>
+                                    <option value="6">June</option>
+                                    <option value="7">July</option>
+                                    <option value="8">August</option>
+                                    <option value="9">September</option>
+                                    <option value="10">October</option>
+                                    <option value="11">November</option>
+                                    <option value="12">December</option>
+                                </select>
+                                <select id="day" name="day" required></select>
+                                <select id="year" name="year" required></select>
+                            </div>
+
+                            <p class="snm">Sex</p>
+                            <div class="sex">
+                                <div class="female">
+                                    <label for="Female">Female</label>
+                                    <input type="radio" name="sex" id="Female" required>
+                                </div>
+                                <div class="male">
+                                    <label for="Male">Male</label>
+                                    <input type="radio" name="sex" id="Male" required>
+                                </div>
+                                <div class="intersex">
+                                    <label for="Intersex">Intersex</label>
+                                    <input type="radio" name="sex" id="Intersex" required>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btnsu" value="Sign Up"><a href="./PAGES/home.html">Sign
+                                    Up</a></button>
+
+                        </form>
+                    </div>
+                </div>
+
+                <div class="register-link">
+                    <p>
+                        Don't have an account?
+                        <button onclick="togglePopup()" class="btnreg">Register</button>
+                    </p>
+                </div>
+
+                <p style="font-family: 'Poppins';">Or sign in with</p>
+                <button type="submit" class="btnfb" value="LOGIN"><a href="https://www.facebook.com" target="_blank"
+                        rel="noopener noreferrer" style="text-decoration: none; color: #23211F; font-size: 20px;">
+                        <i class="fa-brands fa-square-facebook"></i>&nbsp Facebook</a></button>
+                <button type="submit" class="btngg" value="LOGIN"><a
+                        href="https://accounts.google.com/v3/signin/identifier?service=accountsettings&continue=https%3A%2F%2Fmyaccount.google.com%2F&ec=GAlAwAE&hl=en&authuser=0&ddm=0&flowName=GlifWebSignIn&flowEntry=AddSession"
+                        target="_blank" rel="noopener noreferrer"
+                        style="text-decoration: none; color: #23211F; font-size: 20px;">
+                        <i class="fa-brands fa-google"></i>&nbsp Google</a></button>
+
+            </form>
+        </div>
+    </div>
+
+    <img class="logo" src="./IMG/new logo.png" alt="Logo">
+    <div class="footercontainer">
+        <table>
+            <tr>
+                <ul>
+                    <td>
+                        <li>FurFriend Finder</li>
+                    </td>
+                    <td>
+                        <li>Developers</li>
+                    </td>
+                    <td>
+                        <li>User Agreement</li>
+                    </td>
+                    <td>
+                        <li>Privacy Policy</li>
+                    </td>
+                    <td>
+                        <li>Community Guidelines</li>
+                    </td>
+                    <td>
+                        <li>Cookie Policy</li>
+                    </td>
+                    <td>
+                        <li>Copyright Policy</li>
+                    </td>
+                    <td>
+                        <li>Language</li>
+                    </td>
+                </ul>
+            </tr>
+        </table>
+    </div>
+
+    <script>
+        const daySelect = document.getElementById('day');
+        for (let i = 1; i <= 31; i++) {
+            let option = document.createElement('option');
+            option.value = i;
+            option.textContent = i;
+            daySelect.appendChild(option);
+        }
+        const yearSelect = document.getElementById('year');
+        const startYear = 1900;
+        const endYear = 2024;
+        for (let i = startYear; i <= endYear; i++) {
+            let option = document.createElement('option');
+            option.value = i;
+            option.textContent = i;
+            yearSelect.appendChild(option);
+        }
+    </script>
+
+    <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+
+    <script>
+        $(window).on("load", function() {
+            $(".loader-wrapper").fadeOut("slow");
+        });
+    </script>
+</body>
+
+</html>

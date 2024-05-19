@@ -1,0 +1,397 @@
+html, body {
+    margin:0;
+    padding:0;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+body {
+    display: flex;
+}
+
+#EventsPage {
+    display: flex;
+    width: 100%;
+}
+
+.ebgm img {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    max-height: 2600px;
+}
+
+.des1:hover {
+    transform: translateY(90px) rotate(180deg);
+}
+
+.des2:hover {
+    transform: translateY(-90px);
+}
+
+.des1 {
+    transform: rotate(180deg);
+    transition: all 0.3s;
+    margin: 0px 0px 0px 135px;
+    position: absolute;
+}
+
+.des2 {
+    margin: 790px 0px 0px 135px;
+    position: absolute;
+    z-index: 0;
+    transition: all 0.3s;
+}
+
+.title .smol1 {
+    margin: 265px 0px 0px 735px;
+}
+
+.title .smol2 {
+    margin: 385px 0px 0px 1085px;
+    transform: rotate(170deg);
+}
+
+.title .smol1, .title .smol2 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+}
+
+.title p {
+    position: absolute;
+    font-family: "Jomhuria", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 200px;
+    line-height: 96px;
+    top: 150px;
+    left: 800px;
+    color: #23211F;
+    width: 320px;
+}
+
+.description span {
+    margin: 0px 0px 0px 615px;
+}
+
+.description .span2 span {
+    margin: 0px 0px 0px 1284px;
+}
+
+.description span, .description .span2 span {
+    position: absolute;
+    top: 555px;
+    font-size: 25px;
+    color: #23211F;
+}
+
+.description h2 {
+    position: absolute;
+    top: 550px;
+    margin: 0px 0px 0px 645px;
+    color: #23211F;
+}
+
+.description p {
+    position: absolute;
+    top: 600px;
+    margin: 10px 0px 0px 295px;
+    color: #23211F;
+    width: 1300px;
+    text-align: justify;
+    font-size: 21px;
+}
+
+.scrollbg {
+    background: linear-gradient(#ecc155, #ed9455);
+    width: 1550px;
+    margin: 10% auto;
+    padding: 30px 40px 30px 30px;
+    border-radius: 50px;
+    margin: 990px 0px 0px 125px;
+    z-index: 2;
+    position: absolute;
+}
+
+.scrolldiv {
+    width: 1550px;
+    background: transparent;
+    height: 870px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.scrollobj {
+    font-size: 15px;
+    padding: 20px;
+}
+
+table {
+    border-collapse: separate;
+}
+td {
+    padding-right: 50px;
+}
+
+.scrolldiv::-webkit-scrollbar {
+    width: 25px;
+}
+
+.scrolldiv::-webkit-scrollbar-track {
+    background-color: #514A44;
+    border-radius: 12px;
+}
+
+.scrolldiv::-webkit-scrollbar-thumb {
+    background-color: #9B9986;
+    border-radius: 12px;
+}
+
+.eventsbox {
+    width: 700px;
+    height: 825px;
+    border-radius: 50px;
+    background-color: #f3f2e8;
+    margin-bottom: 50px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    position: sticky;
+}
+
+.eventsbox h2 {
+    position: absolute;
+    color: #23211F;
+    font-size: 35px;
+    margin: 515px 0px 0px 17px;
+    font-weight: 700;
+    transition: all .3s;
+}
+
+.eventsbox h4 {
+    position: absolute;
+    color: #23211F;
+    font-size: 20px;
+    margin: 485px 0px 0px 17px;
+    font-weight: 600;
+    transition: all .3s;
+}
+
+.eventsbox span {
+    position: absolute;
+    color: #23211F;
+    font-size: 35px;
+    margin: 523px 0px 0px 635px;
+    font-weight: 700;
+    transition: all .3s;
+}
+
+.eventsbox:hover h2,
+.eventsbox:hover h4,
+.eventsbox:hover span {
+    color: #ed9455;
+}
+
+
+.eventsbox .antirabies,
+.eventsbox .feeding,
+.eventsbox .walkathon,
+.eventsbox .workshop,
+.eventsbox .adopt,
+.eventsbox .microchip,
+.eventsbox .festival,
+.eventsbox .activity {
+    width: 700px;
+    height: 468px;
+    position: absolute;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+.eventsbox .date {
+    top: 580px;
+    left: 30px;
+    width: 100px;
+    height: 120px;
+    background: #f3f2e8;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    position: absolute;
+    transition: all 0.3s;
+}
+
+.eventsbox .date:hover {
+    background: #ecc155;
+    transform: translateY(-20px);
+}
+
+.eventsbox .date:hover .month {
+    color: black;
+}
+
+.eventsbox .date:hover .day {
+    color: green;
+}
+
+.eventsbox .date .month {
+    font-size: 25px;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #ed9455;
+}
+
+.eventsbox .date .day {
+    font-size: 55px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: -30px;
+}
+
+.eventsbox .location {
+    top: 770px;
+    left: 20px;
+    width: 360px;
+    height: 20px;
+    border-radius: 15px;
+    position: absolute;
+    transition: all 0.3s;
+    padding: 10px;
+}
+
+.eventsbox .location p {
+    margin: 0px 0px 0px 20px;
+    position: absolute;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.eventsbox .location [class="fa-solid fa-location-dot"] {
+    margin: 3px 0px 0px 0px;
+    position: absolute;
+    font-size: 15px;
+}
+
+.eventsbox .location:hover p,
+.eventsbox .location:hover [class="fa-solid fa-location-dot"] {
+    color: rgb(139, 0, 0);
+}
+
+.eventsbox .time {
+    width: 300px;
+    height: 60px;
+    top: 580px;
+    left: 150px;
+    position: absolute;
+}
+
+.eventsbox .time p {
+    font-size: 23px;
+    text-align: left;
+    margin-top: 0px;
+    font-style: italic;
+}
+
+.eventsbox .time .yr {
+    font-size: 23px;
+    margin: 90px 0px 0px -100px;
+    font-style: normal;
+    font-weight: bold;
+}
+
+.eventsbox .scrollbgd {
+    background: transparent;
+    width: 530px;
+    margin: 10% auto;
+    padding: 0px;
+    z-index: 2;
+    position: absolute;
+    top: 530px;
+    left: 140px;
+}
+
+.eventsbox .scrolldivd {
+    width: 530px;
+    background: transparent;
+    height: 140px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.eventsbox .eventdescription {
+    font-size: 20px;
+    text-align: justify;
+    padding: 0px 10px 0px 10px;
+}
+
+.eventsbox .scrolldivd::-webkit-scrollbar {
+    width: 10px;
+}
+
+.eventsbox .scrolldivd::-webkit-scrollbar-track {
+    background-color: #514A44;
+    border-radius: 12px;
+}
+
+.eventsbox .scrolldivd::-webkit-scrollbar-thumb {
+    background-color: #9B9986;
+    border-radius: 12px;
+}
+
+.eventsbox a {
+    width: 280px;
+    height: 60px;
+    position: absolute;
+    background: #ecc155;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 50px;
+    top: 750px;
+    left: 400px;
+    transition: all 0.3s;
+    text-decoration: none;
+    color: black;
+}
+
+.eventsbox a [class="fa-solid fa-star"],
+.eventsbox a [class="fa-regular fa-star"] {
+    font-size: 20px;
+    position: absolute;
+    left: 70px;
+    top: 20px;
+    transition: all 0.3s;
+}
+
+.eventsbox a [class="fa-solid fa-star"] {
+    color: #ecc155;
+}
+
+.eventsbox a [class="fa-regular fa-star"] {
+    font-weight: 500;
+}
+
+.eventsbox a p {
+    margin: 16px 0px 0px 100px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.eventsbox a:hover {
+    transform: scale(1.05);
+    background-color: #9e9e98;
+}
+
+.eventsbox a:hover [class="fa-solid fa-star"] {
+    color: #9e9e98;
+}
+
+.eventsbox a:active {
+    background-color: rgb(27, 168, 27);
+}
+
+.eventsbox a:active p,
+.eventsbox a:active [class="fa-solid fa-star"],
+.eventsbox a:active [class="fa-regular fa-star"] {
+    color: #ffffff;
+    transition: 0.4s;
+}
