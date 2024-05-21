@@ -1,5 +1,5 @@
 * 
-This website is optimally displayed across the following web browsers:
+This website is not yet cross-platform compaible and is optimally displayed across the following web browsers with specific screen-resolutions:
 
 Brave
 Google Chrome
